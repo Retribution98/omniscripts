@@ -181,6 +181,15 @@ def prepare_general_parser():
         help="Modin commit hash used for tests.",
     )
     commits.add_argument(
+        "-commit_unidist",
+        default="1234567890123456789012345678901234567890",
+        help="Unidist commit hash used for tests.",
+    )
+    commits.add_argument(
+        "-unidist_hosts",
+        help="Unidist hosts.",
+    )
+    commits.add_argument(
         "-num_threads",
         default=None,
         type=int,

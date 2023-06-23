@@ -68,12 +68,15 @@ def main():
         "commit_hdk": args.commit_hdk,
         "commit_timedf": args.commit_timedf,
         "commit_modin": args.commit_modin,
+        "commit_unidist": args.commit_unidist,
+        "unidist_hosts": args.unidist_hosts,
     }
 
     benchmarkDb = db_config.maybeCreateBenchmarkDb()
 
     run_id = int(round(time.time()))
     print(run_parameters)
+    print(report_args)
 
     for iter_num in range(1, args.iterations + 1):
         print(f"Iteration #{iter_num}")

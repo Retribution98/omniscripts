@@ -102,6 +102,8 @@ class RunParams:
         "commit_hdk",
         "commit_timedf",
         "commit_modin",
+        "commit_unidist",
+        "unidist_hosts",
         "num_threads",
     )
 

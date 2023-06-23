@@ -3,7 +3,7 @@ xgboost>=1.3
 # DF libs
 polars
 modin[all]
-unidist[mpi]
+# unidist[mpi]
 # Tools to load datasets
 kaggle
 boto3
